@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_Color">
+
+        <ImageView
+            android:id="@+id/bookingBackIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:elevation="20dp"
+            android:src="@drawable/ic_round_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:text="Booking"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrival Date"
+        android:paddingStart="10dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/arrivalDate"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:hint="select arrival date"
+        android:background="@drawable/box_shape"
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+        android:padding="15dp"
+        android:textColor="#455A64"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure Date"
+        android:paddingStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/departureDate"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:hint="select departure date"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/box_shape"
+        android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+        android:padding="15dp"
+        android:textColor="#455A64"
+        android:textSize="14sp" />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Number of Rooms"
+            android:textColor="#0C0C0C"
+            android:paddingStart="10dp"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.2"
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/roomNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#455A64"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="14sp" />
+        <Button
+            android:layout_marginRight="40dp"
+            android:layout_weight="0.2"
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/submitLL"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectange_box"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/pricePay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Submit"
+
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+        <!--        android:id="@+id/submitLL"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="650dp"-->
+        <!--        android:background="@drawable/rectange_box"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:padding="16dp">-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:text="Submit"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:textSize="18sp" />-->
+
+        <!--    </LinearLayout>-->
+
+
+    </LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking.Booking_Complete">
+
+    <TextView
+        android:id="@+id/backTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="Booking Successfull"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_booking_sucess" />
+
+    <TextView
+        android:id="@+id/confirmTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:gravity="center_horizontal"
+        android:text="Booking Confirmed!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmTV"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/normal_spacing"
+        android:paddingEnd="@dimen/normal_spacing"
+        android:text="Have a Quality time with us."
+        android:textColor="@color/priceGray"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/bookMoreTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descTV"
+        android:layout_marginStart="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_marginEnd="@dimen/large_spacing"
+        android:layout_marginBottom="@dimen/large_spacing"
+        android:background="@drawable/rectange_box"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/medium_spacing"
+        android:text="Need more Rooms"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

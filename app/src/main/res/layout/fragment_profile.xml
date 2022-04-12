@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.fragments.ProfileFragment">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_Color">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="10dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cod"
+            app:civ_border_color="@color/primary_Color"
+            app:civ_circle_background_color="@color/primary_Color"/>
+
+        <TextView
+            android:id="@+id/profileNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Asmit Poudel"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="asmitpoudel98@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phoneTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="9817186566"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+<LinearLayout
+   android:id="@+id/profedit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="290dp"
+    android:layout_marginBottom="10dp">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:tint="@color/primary_Color">
+
+    </ImageView>
+</LinearLayout>
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/aboutUsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_spacing"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_marginRight="@dimen/normal_spacing"
+        android:background="@drawable/box_shape_selected"
+        android:backgroundTint="#F1EEEE"
+        android:drawableRight="@drawable/ic_aboutus"
+        android:drawableTint="@color/primary_Color"
+        android:padding="@dimen/normal_spacing"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/termsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_spacing"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_marginRight="@dimen/normal_spacing"
+        android:background="@drawable/box_shape_selected"
+        android:backgroundTint="#F1EEEE"
+        android:drawableRight="@drawable/ic_baseline_login_24"
+        android:drawableTint="@color/primary_Color"
+        android:padding="@dimen/normal_spacing"
+        android:text="Terms and Condition"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/logOutTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_spacing"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_marginRight="@dimen/normal_spacing"
+        android:background="@drawable/box_shape_selected"
+        android:backgroundTint="#F1EEEE"
+        android:drawableRight="@drawable/ic_baseline_login_24"
+        android:drawableTint="@color/primary_Color"
+        android:padding="@dimen/normal_spacing"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/adminAreaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_spacing"
+        android:background="@drawable/box_shape_selected"
+        android:backgroundTint="#F1EEEE"
+         android:padding="@dimen/normal_spacing"
+        android:text="Admin Area"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
